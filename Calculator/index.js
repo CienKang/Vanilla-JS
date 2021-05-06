@@ -11,13 +11,6 @@ function Evaluation() {
     document.calc.txt.value = ans;
 }
 
-var button = document.getElementById('button');
-var state = false;
-
-if (!state) {
-    document.getElementById('inp').style.backgroundColor = 'green' ; 
-}
-
 document.addEventListener("keyup", key => {
     if (/^\d$/.test(key.key)) {
         document.calc.txt.value += key.key;
